@@ -1,86 +1,99 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px 0;
 }
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .wrapper {
     width: 900px;
-    margin: 50px auto;
-    box-shadow: 19px 20px 57px 0 #33333347;
+    max-width: 95%;
+    margin: 20px auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-columns: 35% 65%;
-    height:auto;
+    height: auto;
     overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
 }
 
 .topArea .avater img {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
 }
 
-.topArea 
- .avater {
-    width: 140px;
-    height: 140px;
-    border: 5px solid #fff;
+.topArea .avater {
+    width: 130px;
+    height: 130px;
+    border: 4px solid #fff;
     border-radius: 50%;
     text-align: center;
     margin: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nameDeg h2 {
-    font-size: 31px;
-    padding-top: 10px;
-    padding-bottom: 2px;
+    font-size: 28px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
 }
 
 .nameDeg {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .nameDeg h4 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
+    color: #ecf0f1;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .sideBar {
-    background: #afaeac;
-    padding: 10px 34px;
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+    padding: 20px 28px;
     position: relative;
+    color: #fff;
 }
 
 .sideBarWidget {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 .sideBarWidget h3 {
-    font-size: 19px;
-    letter-spacing: 3px;
-    font-weight: 600;
-}
-.sideBarWidget {
-    margin-bottom: 25px;
-}
-
-.sideBarWidget h3 {
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 2px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
 }
 
 .singleInfo {
     display: grid;
     grid-template-columns: 13% 87%;
-    margin-bottom: 1px;
-    font-size: 13px;
+    margin-bottom: 2px;
+    font-size: 12px;
     font-weight: normal;
     align-items: center;
-    line-height: 22px;
+    line-height: 20px;
+    color: #ecf0f1;
+}
+
+.singleInfo i {
+    color: #3498db;
 }
 
 .sideBarWidget ul {
@@ -88,194 +101,383 @@ body{
 }
 
 .sideBarWidget ul li {
-    font-size: 13px;
-    padding: 3px  0;
+    font-size: 12px;
+    padding: 2px 0;
+    color: #ecf0f1;
+    line-height: 18px;
 }
 .singleLink {
     display: grid;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: normal;
     grid-template-columns: 12% 88%;
-    line-height: 25px;
+    line-height: 22px;
     align-items: center;
+}
+
+.singleLink span a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.singleLink span a:hover {
+    color: #3498db;
 }
 .mainContent {
     display: flex;
-    margin-top: 25px;
+    margin-top: 12px;
     position: relative;
 }
 .singleExp.edu h3 {
-    margin-top: 6px;
+    margin-top: 3px;
     font-size: 15px;
 }
 .mainContentContent {
-    padding: 0px  35px;
-}
-
-.achievements {
-    margin-left: 17px;
-}
-
-.achievements h2 {
-    margin-bottom: 4px;
-    color: green;
-    font-weight: 500;
-    font-size: 14px !important;
-    margin-top: 9px;
-    font-style: italic;
-}
-.singleInfoArea .personalProjects p {
-    font-size: 12px;
-    line-height: 18px;
-}
-.achievements ul li {
-    font-size: 13px;
+    padding: 0px 28px 12px 28px;
 }
 
 .singleInfoArea {
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 .singleInfoArea p {
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 13px;
+    line-height: 19px;
     font-weight: 300;
     color: #5e5e5e;
+}
+
+.singleInfoArea h2 {
+    font-size: 16px;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .rightBorder {
     position: absolute;
     right: 0;
     top: 50%;
     width: 3px;
-    height: 70%;
-    background: #333333a6;
+    height: 80%;
+    background: linear-gradient(180deg, #3498db 0%, #2980b9 100%);
     transform: translate(2px, -50%);
+    border-radius: 2px;
 }
 .singleExp h3 {
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 2px;
-    margin-top: 10px;
-    color: #353535;
+    margin-top: 6px;
+    color: #2c3e50;
+    font-weight: 600;
 }
 
 .singleExp h3 span {
     display: block;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: normal;
-    padding-left: 15px;
-    margin-top: 5px;
+    padding-left: 12px;
+    margin-top: 2px;
+    color: #7f8c8d;
+    font-style: italic;
 }
 .singleExp.edu p {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .singleExp h4 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     font-style: italic;
-    color: #373737;
-    margin-bottom: 5px;
+    color: #555;
+    margin-bottom: 3px;
 }
 
 .singleExp h5 {
     font-size: 12px;
     font-weight: 500;
 }
+
+.singleExp ul {
+    padding-left: 11px;
+    list-style: none;
+}
+
+.singleExp ul li {
+    font-size: 13px;
+    line-height: 17px;
+    margin-left: 10px;
+    color: #444;
+    margin-bottom: 1px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.singleExp ul li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
 .singleLink img {
     width: 20px;
     height: 20px;
 }
-.workingTechnologies {
-    width: 100%;
-    height: 159px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* background: #333; */
-    padding-top: 64px;
-    padding-left: 30px;
-    box-sizing: border-box;
+
+.singleInfoArea ul {
+    padding-left: 15px;
 }
 
-.singleLink span a {
-    color: #000;
+.singleInfoArea ul li {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 3px;
+}
+
+.singleInfoArea ul li a {
+    color: #3498db;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.workingTechnologies img {
-    height: 40px;
-    margin: 0 10px;
-    max-width: 60px;
+.singleInfoArea ul li a:hover {
+    color: #2980b9;
+    text-decoration: underline;
 }
-.workingTechnologies img.jsLog {
-    width: 55px;
-}
+
 .printBoktobbo {
     position: fixed;
     left: 0;
     top: 30%;
     padding: 20px;
-    width: 167px;
+    width: 180px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .printBoktobbo button {
     color: #fff;
-    border-radius: 3px;
-    background: #333;
-    padding: 7px 6px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px 15px;
     font-size: 14px;
     cursor: pointer;
     border: none;
+    width: 100%;
+    font-weight: 600;
+    transition: transform 0.2s ease;
 }
 
-.singleInfoArea h2 {
-    font-size: 18px;
-}
-
-.singleExp ul {
-    padding-left: 11px;
-    list-style: circle;
-}
-
-.singleExp ul li {
-    font-size: 14px;
-    line-height: 20px;
-    margin-left: 10px;
-    color: #444;
+.printBoktobbo button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 .printBoktobbo p {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 18px;
     margin-top: 10px;
     color: #666;
 }
+
 /******** Print Mode **********/
 @media print {
-    body {-webkit-print-color-adjust: exact;}
-}
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        background: white !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
 
-@media print{
-    body * { visibility: hidden; margin: 0; padding: 0;}
-    .wrapper * { visibility: visible; }
+    body * {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper * {
+        visibility: visible;
+    }
+
     .wrapper {
-        width: 100%;
-        height:auto;
-        /*position:absolute;*/
-        top:0px;
-        bottom:0px;
-        margin: 0 auto !important;
-        margin-top: 0px !important;
-        /*overflow: hidden;*/
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+        display: grid !important;
+        grid-template-columns: 35% 65% !important;
     }
+
+    .sideBar {
+        padding: 20px 28px !important;
+        page-break-inside: avoid;
+    }
+
+    .topArea {
+        padding-top: 18px !important;
+    }
+
+    .topArea .avater {
+        width: 122px !important;
+        height: 122px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .topArea .avater img {
+        width: 122px !important;
+        height: 122px !important;
+    }
+
+    .nameDeg {
+        margin-bottom: 20px !important;
+    }
+
     .nameDeg h2 {
-        font-size: 24px;
+        font-size: 28px !important;
+        padding-top: 13px !important;
+        padding-bottom: 3px !important;
     }
+
+    .nameDeg h4 {
+        font-size: 15px !important;
+    }
+
+    .sideBarWidget {
+        margin-bottom: 20px !important;
+    }
+
+    .sideBarWidget h3 {
+        font-size: 16px !important;
+        margin-bottom: 7px !important;
+        padding-bottom: 4px !important;
+    }
+
+    .sideBarWidget ul {
+        margin-left: 18px !important;
+    }
+
+    .sideBarWidget ul li {
+        font-size: 13px !important;
+        line-height: 21px !important;
+        padding: 2px 0 !important;
+    }
+
+    .singleInfo {
+        font-size: 13px !important;
+        line-height: 21px !important;
+        margin-bottom: 3px !important;
+    }
+
+    .singleLink {
+        font-size: 13px !important;
+        line-height: 22px !important;
+    }
+
+    .mainContent {
+        margin-top: 18px !important;
+    }
+
+    .mainContentContent {
+        padding: 0 28px 13px 28px !important;
+    }
+
+    .singleInfoArea {
+        margin-top: 10px !important;
+        page-break-inside: avoid;
+    }
+
+    .singleInfoArea h2 {
+        font-size: 18px !important;
+        padding-bottom: 3px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .singleInfoArea p {
+        font-size: 14px !important;
+        line-height: 21px !important;
+    }
+
+    .singleInfoArea ul {
+        padding-left: 17px !important;
+        margin-top: 4px !important;
+    }
+
+    .singleInfoArea ul li {
+        font-size: 14px !important;
+        line-height: 21px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .singleExp {
+        margin-bottom: 9px !important;
+        page-break-inside: avoid;
+    }
+
+    .singleExp h3 {
+        font-size: 16px !important;
+        margin-top: 7px !important;
+        margin-bottom: 1px !important;
+    }
+
+    .singleExp h3 span {
+        font-size: 13px !important;
+        margin-top: 2px !important;
+        padding-left: 14px !important;
+    }
+
+    .singleExp h4 {
+        font-size: 14px !important;
+        margin-bottom: 3px !important;
+    }
+
+    .singleExp ul {
+        padding-left: 13px !important;
+        margin-top: 3px !important;
+    }
+
+    .singleExp ul li {
+        font-size: 14px !important;
+        line-height: 20px !important;
+        margin-bottom: 2px !important;
+        padding-left: 17px !important;
+        margin-left: 11px !important;
+    }
+
+    .singleExp.edu h3 {
+        font-size: 16px !important;
+        margin-top: 7px !important;
+    }
+
+    .singleExp.edu h4 {
+        margin-bottom: 2px !important;
+    }
+
+    .singleExp.edu h5 {
+        margin-top: 3px !important;
+    }
+
+    .printBoktobbo {
+        display: none !important;
+    }
+
     .pagebreak {
         clear: both;
         page-break-after: always;
     }
 
+    @page {
+        margin: 0.4cm;
+        size: A4;
+    }
 }
 
